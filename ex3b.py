@@ -9,5 +9,5 @@ print ''.join(set(sorted(text.replace(' ', ''))))
 seasons = ['Spring', 'Summer', 'Fall', 'Winter']
 print list(enumerate(seasons, start=1))
 
-from datetime import date
-print list(enumerate([date(2015, i, 1).strftime('%B') for i in range(1,13)], 1))
+import calendar
+print list(enumerate([calendar.month_name[i] for i in range(1, 13)], 1))
