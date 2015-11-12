@@ -7,5 +7,5 @@ if result1.code != 0:
 
 cmd2 = 'gcc -shared spammodule.o -L/usr/local/lib -o spammodule.so'
 result2 = shell(cmd2)
-if result1.code != 0:
-    print result1.errors()
+if result2.code != 0:
+    print result2.errors()
